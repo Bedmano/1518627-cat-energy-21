@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Малышев](https://up.htmlacademy.ru/adaptive/21/user/1518627).
-* Наставник: `Неизвестно`.
+* Наставник: `Даниил Гаврилов`.
 
 ---
 
