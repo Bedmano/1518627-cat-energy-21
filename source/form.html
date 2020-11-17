@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <section class="menu">
+      <section class="menu container">
         <!-- Тут будет позже логотип в теге свг-->
         <a href="index.html" class="menu__link menu-logo"><svg aria-label="Логотип сайта Cat Energy" width="34"
             height="38"></svg></a>
@@ -34,23 +34,28 @@
   </header>
   <main class="page-main">
     <div class="page-main__wrapper program">
-      <h1 class="program__item program-title">Подбор программы</h1>
-      <p class="program__item program-text">
+      <h1 class="program__title  container">Подбор программы</h1>
+      <p class="program__text  container">
         Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" class="program__item form">
 
-        <fieldset class="form__field cat-info">
-          <label class="cat-info__title" for="name">Имя:*</label>
-          <input class="cat-info__form" type="text" id="name" name="name" aria-label="Введите имя вашего кота" required>
-          <label class="cat-info__title" for="weight">Вес (КГ):*</label>
-          <input class="cat-info__form" type="number" id="weight" name="weight" aria-label="Введите вес вашего кота"
-            required>
-          <label class="cat-info__title" for="old">Возраст (Лет):</label>
-          <input class="cat-info__form" type="number" id="old" name="old" aria-label="Введите возраст вашего кота">
+        <fieldset class="form__field cat-name  container">
+          <label class="cat-name__title" for="name">Имя:*</label>
+          <input class="cat-name__form" type="text" id="name" name="name" aria-label="Введите имя вашего кота" required>
         </fieldset>
 
-        <fieldset class="form__field radio">
+        <fieldset class="form__field cat-weight  container">
+          <label class="cat-weight__title" for="weight">Вес (КГ):*</label>
+          <input class="cat-weight__form" type="number" id="weight" name="weight" aria-label="Введите вес вашего кота"
+            required>
+        </fieldset>
+        <fieldset class="form__field cat-old  container">
+          <label class="cat-old__title" for="old">Возраст (Лет):</label>
+          <input class="cat-old__form" type="number" id="old" name="old" aria-label="Введите возраст вашего кота">
+        </fieldset>
+
+        <fieldset class="form__field radio  container">
           <label class="radio__radio-button" aria-label="Выбрать программу похудения ">
             <input class="visually-hidden" type="radio" name="purpose" value="Похудеть" checked>
             <span class="radio-button__point"></span>
@@ -68,22 +73,28 @@
           </label>
         </fieldset>
 
-        <fieldset class="form__field user-info">
-          <legend class="user-legend title--sideline">Контактные данные
-            (владельца кота)</legend>
-          <label class="user-info__title" for="email">E-Mail:*</label>
-          <input class="user-info__form" type="email" id="email" name="email" value="KUKLACHEV@GMAIL>COM" required>
-          <label class="user-info__title" for="phone">Телефон:*</label>
-          <input class="user-info__form" type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
+        <div class="user-header section  container">
+          <h2 class="user-header__title section__title section__title--sideline">Контактные данные
+            (владельца кота)</h2>
+        </div>
+
+        <fieldset class="form__field user-email  container">
+          <label class="user-email__title" for="email">E-Mail:*</label>
+          <input class="user-email__form" type="email" id="email" name="email" value="KUKLACHEV@GMAIL>COM" required>
         </fieldset>
 
-        <fieldset class="form__field comment">
-          <legend class="comment__title title--sideline">Комментарий</legend>
-          <textarea name="comment" cols="30" rows="10">Расскажите о всех повадках кота</textarea>
+        <fieldset class="form__field user-phone  container">
+          <label class="user-phone__title" for="phone">Телефон:*</label>
+          <input class="user-phone__form" type="tel" id="phone" name="phone" value="8 (960) 900-60-90" required>
         </fieldset>
 
-        <fieldset class="form__field checkbox">
-          <legend class="checkbox__title title--sideline">Дополнительно</legend>
+        <fieldset class="form__field comment section  container">
+          <legend class="comment__title section__title section__title--sideline">Комментарий</legend>
+          <textarea class="comment__area" name="comment" cols="30" rows="10">Расскажите о всех повадках кота</textarea>
+        </fieldset>
+
+        <fieldset class="form__field checkbox section interract  container">
+          <legend class="checkbox__title section__title section__title--sideline">Дополнительно</legend>
           <label class="checkbox__checkbox-button" aria-label="Выбрать программу похудения ">
             <input class="visually-hidden" type="checkbox" name="additional" value="Сахарозаменитель" checked>
             <span class="checkbox-button__point"></span>
@@ -104,7 +115,8 @@
             <span class="checkbox-button__point"></span>
             <span class="checkbox-button__title">Витамины</span>
           </label>
-          <button type="submit" class="checkbox__submit button button--active">Отправить заявку</button>
+          <button type="submit" class="checkbox__submit interract__button interract__button--active">Отправить
+            заявку</button>
           <p class="checkbox__required">* — Обязательные поля</p>
         </fieldset>
 
@@ -113,7 +125,7 @@
   </main>
   <footer class="page-footer">
     <div class="footer__wrapper">
-      <section class="footer-contacts">
+      <section class="footer-contacts  container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="footer-contacts__item info">
           <p class="info__text">
@@ -129,7 +141,7 @@
         <img class="footer-contacts__item map" src="https://via.placeholder.com/320x362"
           alt="месторасположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </section>
-      <section class="feedback">
+      <section class="feedback container">
         <h2 class="feedback__title site-title"><b>cat</b> energy</h2>
         <ul class="feedback__list social-list">
           <li class="social__item">
