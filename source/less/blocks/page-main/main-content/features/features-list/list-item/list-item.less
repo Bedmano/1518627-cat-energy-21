@@ -1,8 +1,12 @@
 .list-item {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: @dark-gray;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: @tablet) {
+    flex-basis: 250px;
+    flex-direction: column;
+  }
 }
 @import "__image/list-item__image.less";
+@import "__text/list-item__text.less";

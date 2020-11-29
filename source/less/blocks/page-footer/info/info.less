@@ -1,2 +1,19 @@
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  @media (min-width: @desktop) {
+    background-color: @white;
+    width: 570px;
+    height: 201px;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+}
 @import "__text/info__text.less";
 @import "__address/info__address.less";

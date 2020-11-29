@@ -1,1 +1,11 @@
-
+.main-nav {
+  display: none;
+  @media (min-width: @tablet) {
+    display: block;
+    flex-basis: 66%;
+  }
+  @media(min-width: @desktop){
+    flex-basis: 50%;
+    z-index: 5;
+  }
+}

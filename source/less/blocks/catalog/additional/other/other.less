@@ -1,2 +1,16 @@
+.other {
+  display: grid;
+  grid-template-rows: 1fr 1fr 40px;
+  grid-template-columns: 1fr 1fr;
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: @desktop) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
 @import "__title/other__title.less";
 @import "__item/other__item.less";
+@import "__button/other__button.less";

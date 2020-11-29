@@ -1,4 +1,12 @@
 .checkbox__button {
   font-size: 16px;
   line-height: 18px;
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    flex-basis: 280px;
+  }
+  @media(min-width:@desktop){
+    flex-basis: 221px;
+  }
 }

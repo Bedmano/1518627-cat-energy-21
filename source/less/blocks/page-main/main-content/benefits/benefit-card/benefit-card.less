@@ -1,7 +1,26 @@
 .benefit-card {
   background-color: @gray;
-  width: 280px;
-  height: 266px;
+  min-width: 280px;
+  min-height: 266px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  box-sizing: border-box;
+  @media (min-width: @tablet) {
+    width: 708px;
+    min-height: 372px;
+    padding-left: 52px;
+    padding-right: 60px;
+    flex-direction: column;
+  }
+  @media (min-width: @desktop) {
+    display: grid;
+    width: 570px;
+    gap: 30px;
+    grid-template-rows: 150px min-content 50px;
+    grid-template-columns: 150px 250px 170px;
+  }
 }
 @import "__title/benefit-card__title.less";
 @import "__text/benefit-card__text.less";

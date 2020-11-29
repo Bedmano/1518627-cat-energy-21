@@ -1,9 +1,11 @@
 .intro__cat {
-  margin: 0 auto;
-  background-color: @green;
-  height: 302px;
-  img {
-    opacity: 0.3;
-    background-size: contain;
+  @media (min-width: @tablet) {
+    display: none;
+  }
+  @media (min-width: @desktop) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

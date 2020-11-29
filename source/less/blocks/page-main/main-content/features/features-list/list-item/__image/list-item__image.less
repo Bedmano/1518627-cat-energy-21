@@ -1,5 +1,8 @@
 .list-item__image {
   background-color: @green;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
+  @media (min-width: @tablet) {
+  align-self: flex-start;
+  }
 }

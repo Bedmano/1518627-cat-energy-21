@@ -2,4 +2,19 @@
   font-size: 16px;
   line-height: 18px;
   color: @dark-gray;
+  resize: none;
+  border: 1px solid @border;
+  width: 280px;
+  height: 150px;
+  box-sizing: border-box;
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 631px;
+    height: 174px;
+  }
+  @media (min-width: @tablet) {
+    width: 1220px;
+    height: 174px;
+  }
 }
