@@ -2,8 +2,14 @@
   margin: 0;
   padding: 0;
   @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 190px 190px;
+    gap: 120px 150px;
+  }
+  @media (min-width: @desktop) {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-basis: 230px;
   }
 }

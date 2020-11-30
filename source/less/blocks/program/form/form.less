@@ -1,5 +1,8 @@
-.form{
+.form {
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: @desktop) {
+    justify-content: space-between;
+  }
 }
 @import "__field/form__field.less";
