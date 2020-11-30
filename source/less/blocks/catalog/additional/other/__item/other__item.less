@@ -3,4 +3,16 @@
   font-size: 14px;
   line-height: 14px;
   color: @dark-gray;
+  &:first-of-type{
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  &:last-of-type{
+    grid-column-start: -2;
+    grid-column-end: -1;
+  }
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

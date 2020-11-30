@@ -1,6 +1,19 @@
 .benefit-card__text {
+  font-family: "Arial" sans-serif;
   color: @dark-gray;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial" sans-serif;
+  margin: 0;
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 377px;
+    align-self: flex-start;
+  }
+  @media (min-width: @desktop) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }

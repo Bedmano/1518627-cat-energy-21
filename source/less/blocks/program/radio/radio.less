@@ -2,4 +2,20 @@
   font-size: 16px;
   line-height: 18px;
   color: @light-gray;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid @border;
+    width: 630px;
+  }
+  @media (min-width: @desktop) {
+    margin: 0;
+    box-sizing: border-box;
+    height: 200px;
+    flex-basis: 568px;
+    justify-content: space-evenly;
+  }
 }

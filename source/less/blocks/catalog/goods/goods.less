@@ -1,2 +1,22 @@
+.goods {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows:repeat(2, 1fr) 40px;
+  @media (min-width: @tablet) {
+    width: 324px;
+    height: 430px;
+    background-color: @gray;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  @media (min-width: @desktop) {
+    width: 245px;
+  }
+}
 @import "__title/goods__title.less";
 @import "table/table.less";
+@import "__image/goods__image.less";
+@import "__button/goods__button.less";

@@ -1,2 +1,19 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  @media (min-width: @tablet) {
+    width: 324px;
+    height: 430px;
+    box-sizing: border-box;
+    border: 1px solid @border;
+  }
+  @media (min-width: @desktop) {
+    width: 245px;
+  }
+}
 @import "__title/show-more__title.less";
 @import "__text/show-more__text.less";

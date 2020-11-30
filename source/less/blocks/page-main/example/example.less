@@ -1,5 +1,13 @@
 .example {
   background-color: @example;
+
+  @media (min-width: @tablet) {
+    background-color: @white;
+  }
+  @media (min-width:@desktop){
+
+    flex-basis: 50%;
+  }
 }
 @import "__title/example__title.less";
 @import "__text/example__text.less";

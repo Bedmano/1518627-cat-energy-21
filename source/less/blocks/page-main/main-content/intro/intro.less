@@ -2,7 +2,18 @@
   font-size: 36px;
   line-height: 36px;
   color: @white;
+  @media (min-width: @tablet) {
+    padding-left: 119px;
+  }
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 190px;
+    margin-bottom: 500px;
+  }
 }
 @import "__cat/intro__cat.less";
 @import "__text/intro__text.less";
 @import "__title/intro__title.less";
+@import "__food/intro__food.less";
