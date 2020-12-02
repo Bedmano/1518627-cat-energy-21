@@ -43,41 +43,41 @@
         Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" class="program__item form">
+        <div class="form__field cat-info">
+          <fieldset class="cat-info__field cat-name">
+            <label class="cat-name__title" for="name">Имя:*</label>
+            <input class="cat-name__form" type="text" id="name" name="name" aria-label="Введите имя вашего кота"
+              required>
+          </fieldset>
 
-        <fieldset class="form__field cat-name">
-          <label class="cat-name__title" for="name">Имя:*</label>
-          <input class="cat-name__form" type="text" id="name" name="name" aria-label="Введите имя вашего кота"
-            required>
-        </fieldset>
+          <fieldset class="cat-info__field cat-weight">
+            <label class="cat-weight__title" for="weight">Вес (КГ):*</label>
+            <input class="cat-weight__form" type="number" id="weight" name="weight" aria-label="Введите вес вашего кота"
+              required>
+          </fieldset>
+          <fieldset class="cat-info__field cat-old">
+            <label class="cat-old__title" for="old">Возраст (Лет):</label>
+            <input class="cat-old__form" type="number" id="old" name="old" aria-label="Введите возраст вашего кота">
+          </fieldset>
 
-        <fieldset class="form__field cat-weight">
-          <label class="cat-weight__title" for="weight">Вес (КГ):*</label>
-          <input class="cat-weight__form" type="number" id="weight" name="weight"
-            aria-label="Введите вес вашего кота" required>
-        </fieldset>
-        <fieldset class="form__field cat-old">
-          <label class="cat-old__title" for="old">Возраст (Лет):</label>
-          <input class="cat-old__form" type="number" id="old" name="old" aria-label="Введите возраст вашего кота">
-        </fieldset>
-
-        <fieldset class="form__field radio">
-          <label class="radio__button radio-button" aria-label="Выбрать программу похудения ">
-            <input class="visually-hidden" type="radio" name="purpose" value="Похудеть" checked>
-            <span class="radio-button__point"></span>
-            <span class="radio-button__title">Похудеть</span>
-          </label>
-          <label class="radio__button radio-button" aria-label="Выбрать программу для набора веса">
-            <input class="visually-hidden" type="radio" name="purpose" value="Набрать вес">
-            <span class="radio-button__point"></span>
-            <span class="radio-button__title">Набрать вес</span>
-          </label>
-          <label class="radio__button radio-button" aria-label="Помочь с выбором">
-            <input class="visually-hidden" type="radio" name="purpose" value="Нужна консультация">
-            <span class="radio-button__point"></span>
-            <span class="radio-button__title">Не знаю (Нужен совет)</span>
-          </label>
-        </fieldset>
-
+          <fieldset class="cat-info__field radio">
+            <label class="radio__button radio-button" aria-label="Выбрать программу похудения ">
+              <input class="visually-hidden" type="radio" name="purpose" value="Похудеть" checked>
+              <span class="radio-button__point"></span>
+              <span class="radio-button__title">Похудеть</span>
+            </label>
+            <label class="radio__button radio-button" aria-label="Выбрать программу для набора веса">
+              <input class="visually-hidden" type="radio" name="purpose" value="Набрать вес">
+              <span class="radio-button__point"></span>
+              <span class="radio-button__title">Набрать вес</span>
+            </label>
+            <label class="radio__button radio-button" aria-label="Помочь с выбором">
+              <input class="visually-hidden" type="radio" name="purpose" value="Нужна консультация">
+              <span class="radio-button__point"></span>
+              <span class="radio-button__title">Не знаю (Нужен совет)</span>
+            </label>
+          </fieldset>
+        </div>
         <div class="user-header section">
           <h2 class="user-header__title section__title section__title--sideline">Контактные данные
             (владельца кота)</h2>
