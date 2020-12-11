@@ -1,14 +1,13 @@
 .menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   @media (min-width: @tablet) {
-    padding-top: 20px;
+    padding-top: 11px;
+    justify-content: space-between;
   }
   @media (min-width: @desktop) {
-    padding-top: 50px;
+    padding: 0;
+    padding-top: 40px;
   }
 }
-@import "__link/menu__link.less";
-@import "__title/menu__title.less";
-@import "__toggle/menu__toggle.less";
+@import "bar/bar.less";

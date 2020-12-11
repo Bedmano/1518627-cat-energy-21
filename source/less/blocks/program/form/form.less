@@ -1,8 +1,13 @@
 .form {
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: @tablet) {
+    padding-right: 34px;
+  }
+
   @media (min-width: @desktop) {
     justify-content: space-between;
+    padding-right: 0;
   }
 }
 @import "__field/form__field.less";

@@ -1,0 +1,28 @@
+.preview-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  padding-top: 27px;
+  padding-bottom: 33px;
+  background-color: @example;
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 70px;
+    padding-top: 43px;
+    background-color: @white;
+    position: relative;
+    &::before {
+      content: "";
+      background-color: @menu-border;
+      position: absolute;
+      width: 100vw;
+      height: 1px;
+      top: 0px;
+      left: 0;
+      @media (min-width: @desktop) {
+        display: none;
+      }
+    }
+  }
+}

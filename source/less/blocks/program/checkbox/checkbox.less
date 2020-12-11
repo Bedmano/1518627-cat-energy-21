@@ -1,15 +1,22 @@
 .checkbox {
   flex-direction: column;
   align-items: flex-start;
+  min-width: 280px;
+  margin-bottom: 15px;
+  flex-basis: 100%;
   @media (min-width: @tablet) {
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 62px;
+    flex-basis: 570px;
+    margin-bottom: 67px;
   }
   @media (min-width: @desktop) {
     flex-basis: 100%;
+    margin-bottom: 73px;
   }
 }
 @import "__title/checkbox__title.less";
-@import "__button/checkbox__button.less";
+@import "checkbox-button/checkbox-button.less";
 @import "__required/checkbox__required.less";
-@import "__submit/checkbox-button__submit.less";
+@import "__submit/checkbox__submit.less";

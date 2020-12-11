@@ -3,8 +3,23 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    .preview__item {
+    background-color: @gray;
+    background-size: 100vw;
+    height: 462px;
+    position: relative;
+    &::after {
+      content: "";
       background-color: @example;
+      height: 462px;
+      min-width: 30%;
+      position: absolute;
+      right: -37px;
+      bottom: 0px;
+      background-size: contain;
+      z-index:0;
+    }
+    &__item {
+      width: 50%;
     }
   }
 }

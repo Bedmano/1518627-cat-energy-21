@@ -3,9 +3,23 @@
   line-height: 20px;
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
+  padding: 0;
+  text-transform: uppercase;
   @media (min-width: @tablet) {
     font-size: 20px;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-around;
+    padding-top: 11px;
+  }
+  @media (min-width: @desktop) {
+    align-items: flex-start;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    div:first-child {
+      padding-right: 63px;
+    }
   }
 }

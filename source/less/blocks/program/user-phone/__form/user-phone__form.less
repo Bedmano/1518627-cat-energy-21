@@ -1,13 +1,30 @@
 .user-phone__form {
   border: 1px solid @border;
-  width: 204px;
   height: 45px;
   box-sizing: border-box;
+  flex-grow: 2;
+  margin-left: 9px;
+  padding-left: 13px;
+  color: @dark-gray;
+  &:disabled {
+    border-color: @dark-gray;
+  }
+  &:disabled + .user-phone__icon path {
+    fill: @green;
+  }
+  &--error {
+    border-color: @error;
+  }
+  &--error + .user-phone__icon path {
+    fill: @error;
+  }
   @media (min-width: @tablet) {
-    width: 535px;
+    min-width: 535px;
     height: 52px;
+    margin-left: 12px;
+    padding-left: 18px;
   }
   @media (min-width: @desktop) {
-    width: 472px;
+    min-width: 472px;
   }
 }

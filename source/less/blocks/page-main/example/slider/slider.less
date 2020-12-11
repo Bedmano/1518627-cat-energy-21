@@ -1,3 +1,11 @@
 .slider {
-
+  & > &--current {
+    display: block;
+  }
+  @media (min-width: @tablet) {
+    height: 462px;
+    position: relative;
+  }
 }
+@import "__after/slider__after.less";
+@import "__before/slider__before.less";

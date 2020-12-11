@@ -1,5 +1,14 @@
 .box {
   display: flex;
   justify-content: space-between;
+  min-width: 280px;
+  margin-bottom: 32px;
+  @media (min-width: @tablet) {
+    min-width: 366px;
+
+  }
+  @media (min-width: @desktop) {
+    padding-bottom: 29px;
+  }
 }
 @import "__item/box__item.less";

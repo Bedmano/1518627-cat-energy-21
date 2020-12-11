@@ -16,12 +16,15 @@
     <div class="page-header__wrapper">
       <section class="menu container">
         <h2 class="visually-hidden">Навигация по сайту Cat Energy</h2>
-        <a class="menu__link" aria-label="Логотип сайта Cat Energy"></a>
-        <a class="menu__title"></a>
-        <button type="button" class="menu__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="menu__bar bar">
+          <a class="bar__link" aria-label="Логотип сайта Cat Energy"></a>
+          <a class="bar__title" aria-label="Название сайта - Cat Energy"></a>
+          <button type="button" class="bar__toggle bar__toggle--hamburger"><span class="visually-hidden">Открыть
+              меню</span></button>
+        </div>
         <nav class="menu__nav main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--index">
+            <li class="site-list__item site-list__item--index site-list__item--current">
               <a aria-label="Вы находитесь на главной странице">Главная</a>
             </li>
             <li class="site-list__item site-list__item--index">
@@ -39,11 +42,7 @@
     <div class="page-main__wrapper main-content">
       <section class="main-content__intro intro interract">
         <h1 class="intro__title container">Функциональное питание для котов</h1>
-        <picture class="intro__cat">
-          <source media="(max-width: 320px)" srcset="img/cat-background-mobile.jpg">
-          <source media="(min-width: 1440px)" srcset="img/cat-background.jpg">
-          <img src="img/cat-background.jpg" alt="Изображение облизывающегося кота">
-        </picture>
+        <div class="intro__cat"></div>
         <p class="intro__text container">Занялся собой? Займись котом!</p>
         <picture class="intro__food">
           <source media="(max-width: 767px)" srcset="img/cat-food.png">
@@ -51,7 +50,7 @@
           <source media="(min-width: 1440px)" srcset="img/cat-food-desktop.png">
           <img alt="Изображение питания Cat Energy" src="img/cat-food-desktop.png">
         </picture>
-        <a class="intro__link container interract__button interract__button--active" href="form.html"
+        <a class="intro__link interract__button interract__button--active" href="form.html"
           aria-label="Перейти на страницу подбора программы">Подобрать программу</a>
       </section>
       <section class="main-content__benefits benefits container">
@@ -61,12 +60,12 @@
           <h2 class="benefit-card__title">Похудение</h2>
           <p class="benefit-card__text">
             Ваш кот весит больше собаки и
-            почти утратил способность лазить
-            по деревьям? Пора на диету! Cat
+            почти утратил<br class="benefit-br--t"> способность лазить
+            по деревьям? Пора на диету!<br class="benefit-br--t"> Cat
             Energy Slim поможет вашему
-            питомцу сбросить лишний вес.</p>
-          <a class="benefit-card__link" href="#">Каталог Slim <svg class="benefit-card__icon" width="32" height="12"
-              viewBox="0 0 32 12" fill="none">
+            питомцу<br class="benefit-br--t"> сбросить лишний вес.</p>
+          <a class="benefit-card__link" href="catalog.html">Каталог Slim <svg class="benefit-card__icon" width="32"
+              height="12" viewBox="0 0 32 12" fill="none">
               <line y1="6" x2="26" y2="6" stroke="black" stroke-width="2" />
               <path d="M32 6L25.25 11.1962L25.25 0.803848L32 6Z" fill="black" />
             </svg></a>
@@ -76,12 +75,12 @@
           <h2 class="benefit-card__title">Набор массы</h2>
           <p class="benefit-card__text">
             Заработать авторитет среди
-            дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет
+            дворовых котов<br class="benefit-br--t"> и даже собак?
+            Серия Cat Energy Pro поможет<br class="benefit-br--t">
             вашему коту нарастить
-            необходимые мышцы!</p>
-          <a class="benefit-card__link" href="#">Каталог Pro<svg class="benefit-card__icon" width="32" height="12"
-              viewBox="0 0 32 12" fill="none">
+            необходимые<br class="benefit-br--t"> мышцы!</p>
+          <a class="benefit-card__link" href="catalog.html">Каталог Pro<svg class="benefit-card__icon" width="32"
+              height="12" viewBox="0 0 32 12" fill="none">
               <line y1="6" x2="26" y2="6" stroke="black" stroke-width="2" />
               <path d="M32 6L25.25 11.1962L25.25 0.803848L32 6Z" fill="black" />
             </svg></a>
@@ -116,13 +115,14 @@
             <p class="list-item__text">
               Уже через месяц
               наслаждайтесь изменениями
-              к лучшему вашего питомца!</p>
+              к лучшему<br> вашего питомца!</p>
           </li>
         </ul>
       </section>
+      <h2 class="preview-title container">Живой пример</h2>
       <section class="preview">
+        <h2 class="visually-hidden">Пример</h2>
         <div class="preview__item example">
-          <h2 class="example__title container">Живой пример</h2>
           <p class="example__text container">
             Борис сбросил 5 кг за 2 месяца, просто
             заменив свой обычный корм на Cat
@@ -130,8 +130,8 @@
             изнуряющих тренировок! При этом он не
             менял своих привычек и по-прежнему
             спит по 16 часов в день. </p>
-          <div class="example__item example-result">
-            <div class="example-result__item container box">
+          <div class="example__item example-result container">
+            <div class="example-result__item box">
               <div class="box__item box__item--border">
                 <b>5 КГ</b>
                 <div>Снижение веса</div>
@@ -142,29 +142,36 @@
               </div>
             </div>
             <div class="example-result__cost container">
-              <div>Затраты на питание: </div>
+              <div>Затраты на питание:</div>
               <div>15 000 РУБ.</div>
             </div>
           </div>
         </div>
         <div class="preview__item slider-wrapper">
-          <div class="slider-wrapper_item slider container">
-            <div class="slider-wrapper__images slider-image">
-              <img class="slider__image slider__image--current" src="img/before-mobile.png"
-                alt="Изображение кота до похудения">
-              <img class="slider__image" src="img/after-mobile.png" alt="Изображение кота после похудения">
-            </div>
+          <div class="slider-wrapper__item slider">
+            <picture class="slider__before slider--current">
+              <source media="(max-width:767px)" srcset="img/before-mobile.png">
+              <source media="(max-width:1439px)" srcset="img/before-tablet.png">
+              <source media="(min-width:1440px)" srcset="img/before-desktop.png">
+              <img src="img/before-desktop.png" alt="Изображение кота до похудения">
+            </picture>
+            <picture class="slider__after">
+              <source media="(max-width:767px)" srcset="img/after-mobile.png">
+              <source media="(max-width:1439px)" srcset="img/after-tablet.png">
+              <source media="(min-width:1440px)" srcset="img/after-desktop.png">
+              <img src="img/after-desktop.png" alt="Изображение кота после похудения">
+            </picture>
             <div class="slider__bar slider-bar">
-              <span class="slider-bar__text">Было</span>
+              <button type="button" class="slider-bar__text">Было</button>
               <ul class="slider-bar__list slider-list">
-                <li class="slider-list__item slider__item--current">1</li>
-                <li class="slider-list__item">2</li>
+                <li class="slider-list__item slider-list__item--current"></li>
+                <li class="slider-list__item"></li>
+                <li class="slider-list__lever"></li>
               </ul>
-              <span class="slider-bar__text">Стало</span>
+              <button type="button" class="slider-bar__text">Стало</button>
             </div>
           </div>
         </div>
-
       </section>
     </div>
   </main>
@@ -174,24 +181,27 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="footer-contacts__item info">
           <p class="info__text">
-            приглашаем
-            к сотрудничеству
+            приглашаем<br>
+            к сотрудничеству<br>
             дилеров!</p>
           <address class="info__address">
-            <div>ул. Большая
-              Конюшенная, д. 19/8</div>
+            <div>ул. Большая<br>
+              Конюшенная, д. 19/8<br></div>
             <div>Санкт-Петербург</div>
           </address>
         </div>
       </section>
-      <picture class="footer-contacts__item map">
-        <source media="(max-width: 320px)" srcset="img/map-mobile.jpg">
-        <source media="(max-width: 768px)" srcset="img/map-tablet.jpg">
-        <source media="(min-width: 1440px)" srcset="img/map.jpg">
-        <img src="img/map.jpg"
-          alt="месторасположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-      </picture>
-
+      <iframe class="footer-contacts__item map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5274.3943452615795!2d30.31883647199927!3d59.938416986466656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607185937459!5m2!1sru!2sru"
+        width="320" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        <picture>
+          <source media="(max-width: 320px)" srcset="img/map-mobile.jpg">
+          <source media="(max-width: 768px)" srcset="img/map-tablet.jpg">
+          <source media="(min-width: 1440px)" srcset="img/map.jpg">
+          <img src="img/map.jpg"
+            alt="месторасположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+      </iframe>
       <section class="feedback container">
         <h2 class="visually-hidden">Полезные ссылки</h2>
         <a class="feedback__title" aria-label="Вы находитесь на главной странице"><svg width="128" height="24"
@@ -258,9 +268,11 @@
         </ul>
         <div class="feedback__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo"><svg viewBox="0 0 60 60">
-              <path class="academy" fill="#2E368F"
-                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          <a class="copyright__logo"><svg width="27" height="34" viewBox="0 0 27 34" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+                fill="#666666" />
             </svg>
           </a>
         </div>

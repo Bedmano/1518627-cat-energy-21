@@ -3,9 +3,62 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+
   @media (min-width: @tablet) {
-    flex-basis: 250px;
     flex-direction: column;
+    &:first-child::after {
+      content: "1";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: @gray;
+      top: -42px;
+      right: 0px;
+      @media (min-width: @desktop) {
+        right: 20px;
+      }
+    }
+    &:nth-child(2)::after {
+      content: "2";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: @gray;
+      top: -39px;
+      right: -20px;
+      @media (min-width: @desktop) {
+        right: -10px;
+      }
+    }
+    &:nth-child(3)::after {
+      content: "3";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: @gray;
+      top: -40px;
+      right: -20px;
+      @media (min-width: @desktop) {
+        right: 15px;
+      }
+    }
+    &:nth-child(4)::after {
+      content: "4";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: @gray;
+      top: -39px;
+      right: -23px;
+      @media (min-width: @desktop) {
+        right: 0px;
+      }
+    }
+  }
+  @media (min-width: @desktop) {
+    flex-basis: 245px;
   }
 }
 @import "__image/list-item__image.less";

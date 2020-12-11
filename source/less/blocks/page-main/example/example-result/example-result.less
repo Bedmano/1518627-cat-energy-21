@@ -1,5 +1,13 @@
 .example-result {
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: @tablet) {
+    flex-wrap: nowrap;
+  }
+  @media (min-width: @desktop) {
+    flex-basis: 50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 @import "__cost/example-result__cost.less";

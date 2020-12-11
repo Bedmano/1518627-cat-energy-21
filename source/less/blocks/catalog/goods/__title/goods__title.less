@@ -1,22 +1,33 @@
 .goods__title {
-  font-size: 16px;
-  line-height: 20px;
   color: @light-gray;
   text-decoration: none;
-  margin: 0;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: -1;
+  text-align: left;
+  width: 80px;
+  text-transform: uppercase;
   h2 {
     font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
   }
   @media (min-width: @tablet) {
-    font-size: 20px;
-    line-height: 24px;
+    width: 140px;
+    margin-top: 130px;
+    h2 {
+      font-size: 20px;
+      line-height: 24px;
+      flex-basis: 78%;
+      text-align: center;
+    }
   }
   @media (min-width: @desktop) {
-    font-size: 20px;
-    line-height: 21px;
+    h2 {
+      font-size: 20px;
+      line-height: 21px;
+    }
   }
 }
