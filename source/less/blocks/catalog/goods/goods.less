@@ -1,12 +1,6 @@
 .goods {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-<<<<<<< Updated upstream
-  grid-template-rows: repeat(2, 1fr) 40px;
-=======
-<<<<<<< Updated upstream
-  grid-template-rows:repeat(2, 1fr) 40px;
-=======
   grid-template-rows: 60px 1fr 1fr;
   position: relative;
   height: 209px;
@@ -31,8 +25,6 @@
     left: -20px;
   }
 
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   @media (min-width: @tablet) {
     width: 324px;
     height: 430px;
@@ -40,50 +32,25 @@
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
-<<<<<<< Updated upstream
-    justify-content: space-between;
-    // margin-left: 60px;
-    // &:nth-child(even){
-    //   margin-left: 0;
-    // }
-=======
-<<<<<<< Updated upstream
-    justify-content: space-evenly;
-=======
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 140px;
+    margin-bottom: 141px;
     align-items: flex-end;
-    &:nth-child(5),
-    &:nth-child(6),
-    &:nth-child(7) {
-      margin-bottom: 77px;
+    &:nth-last-of-type(2) {
+      margin-bottom: 68px;
     }
     &::before,
     &::after {
       display: none;
     }
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   }
-
   @media (min-width: @desktop) {
     width: 245px;
-<<<<<<< Updated upstream
-    // margin-left: 80px;
-    // &:nth-of-type(even) {
-    //   margin-left: 0;
-    // }
-
-=======
-<<<<<<< Updated upstream
-=======
-    margin-bottom: 145px;
-    &:nth-last-child(2) {
-      margin-bottom: 70px;
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
+      margin-bottom: 79px;
     }
->>>>>>> Stashed changes
->>>>>>> Stashed changes
   }
 }
 @import "__title/goods__title.less";
