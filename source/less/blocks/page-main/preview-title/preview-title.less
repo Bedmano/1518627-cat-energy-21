@@ -8,7 +8,7 @@
   @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 65px;
     padding-top: 43px;
     background-color: @white;
     position: relative;
@@ -16,13 +16,16 @@
       content: "";
       background-color: @menu-border;
       position: absolute;
-      width: 100vw;
+      width: 200vw;
       height: 1px;
-      top: 0px;
-      left: 0;
+      top: 0;
+      left: -40%;
       @media (min-width: @desktop) {
         display: none;
       }
     }
+  }
+  @media (min-width: @desktop) {
+    padding-bottom: 70px;
   }
 }

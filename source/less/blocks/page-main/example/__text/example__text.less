@@ -5,10 +5,13 @@
   padding-bottom: 24px;
   padding-right: 30px;
   box-sizing: border-box;
+  &--br {
+    display: none;
+  }
   @media (min-width: @tablet) {
     font-size: 16px;
     line-height: 24px;
-    padding-left: 0px;
+    padding-left: 0;
     margin-bottom: 27px;
   }
   @media (min-width: @desktop) {
@@ -18,5 +21,8 @@
     padding-top: 74px;
     padding-bottom: 69px;
     padding-left: 110px;
+    &--br {
+      display: block;
+    }
   }
 }

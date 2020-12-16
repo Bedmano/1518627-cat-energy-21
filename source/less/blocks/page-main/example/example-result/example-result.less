@@ -1,13 +1,23 @@
 .example-result {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 60px;
   @media (min-width: @tablet) {
     flex-wrap: nowrap;
+    width: 708px;
+    justify-content: space-between;
+    padding: 0;
   }
   @media (min-width: @desktop) {
     flex-basis: 50%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: 500px;
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 0;
+    box-sizing: border-box;
   }
 }
 @import "__cost/example-result__cost.less";

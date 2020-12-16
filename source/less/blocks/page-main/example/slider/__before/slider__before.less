@@ -4,10 +4,20 @@
     display: block;
     position: absolute;
     top: -190px;
-    left: 35px;
+    right: 50%;
   }
   @media (min-width: @desktop) {
-    left: -40px;
     top: -225px;
+    &::after {
+      content: "";
+      background-color: @example;
+      height: 462px;
+      width: 30vw;
+      position: absolute;
+      left: 90.5%;
+      bottom: -115px;
+      background-size: contain;
+      z-index: 2;
+    }
   }
 }

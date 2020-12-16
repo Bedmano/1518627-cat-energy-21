@@ -1,14 +1,13 @@
 .box {
   display: flex;
   justify-content: space-between;
-  min-width: 280px;
+  width: 100%;
   margin-bottom: 32px;
   @media (min-width: @tablet) {
-    min-width: 366px;
-
+    width: 366px;
   }
   @media (min-width: @desktop) {
-    padding-bottom: 29px;
+    padding-bottom: 18px;
   }
 }
 @import "__item/box__item.less";

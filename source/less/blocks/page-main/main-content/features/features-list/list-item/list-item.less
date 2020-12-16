@@ -8,53 +8,33 @@
 
   @media (min-width: @tablet) {
     flex-direction: column;
-    &:first-child::after {
-      content: "1";
+    &::after {
+      counter-increment: list;
+      content: counter(list) "";
       position: absolute;
       font-size: 280px;
       line-height: 280px;
       color: @gray;
       top: -42px;
-      right: 0px;
+      right: 0;
       @media (min-width: @desktop) {
         right: 20px;
       }
     }
     &:nth-child(2)::after {
-      content: "2";
-      position: absolute;
-      font-size: 280px;
-      line-height: 280px;
-      color: @gray;
       top: -39px;
-      right: -20px;
-      @media (min-width: @desktop) {
-        right: -10px;
-      }
+      right: 0;
     }
     &:nth-child(3)::after {
-      content: "3";
-      position: absolute;
-      font-size: 280px;
-      line-height: 280px;
-      color: @gray;
       top: -40px;
       right: -20px;
       @media (min-width: @desktop) {
-        right: 15px;
+        right: 0;
       }
     }
     &:nth-child(4)::after {
-      content: "4";
-      position: absolute;
-      font-size: 280px;
-      line-height: 280px;
-      color: @gray;
       top: -39px;
-      right: -23px;
-      @media (min-width: @desktop) {
-        right: 0px;
-      }
+      right: 0;
     }
   }
   @media (min-width: @desktop) {
