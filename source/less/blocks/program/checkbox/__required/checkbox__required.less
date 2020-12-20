@@ -4,9 +4,19 @@
   line-height: 16px;
   text-align: center;
   color: @black;
+  width: 100%;
   @media (min-width: @tablet) {
     font-size: 16px;
     flex-basis: 280px;
+    margin-top: 32px;
+    text-align: left;
+    padding-left: 55px;
+    box-sizing: border-box;
   }
-
+  @media (min-width: @desktop) {
+    text-align: left;
+    flex-grow: 2;
+    margin-top: 41px;
+    padding-left: 0;
+  }
 }

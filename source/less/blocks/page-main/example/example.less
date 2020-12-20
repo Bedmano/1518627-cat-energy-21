@@ -1,13 +1,12 @@
 .example {
   background-color: @example;
-
+  position: relative;
   @media (min-width: @tablet) {
     background-color: @white;
+    margin-bottom: 225px;
   }
-  @media (min-width:@desktop){
-
-    flex-basis: 50%;
+  @media (min-width: @desktop) {
+    background-color: inherit;
   }
 }
-@import "__title/example__title.less";
 @import "__text/example__text.less";

@@ -1,0 +1,22 @@
+.intro-cat {
+  width: 100vw;
+  height: 302px;
+  background-repeat: no-repeat;
+  background-image: url(../../../../../../img/cat-background-mobile.jpg);
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  @media (min-width: @tablet) {
+    display: none;
+  }
+  @media (min-width: @desktop) {
+    display: block;
+    background-image: url(../../../../../../img/cat-background.jpg);
+    width: 50vw;
+    height: 696px;
+    background-size: cover;
+    top: 0;
+    left: auto;
+    right: 0;
+  }
+}

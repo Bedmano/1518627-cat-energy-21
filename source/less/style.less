@@ -1,4 +1,5 @@
 @white: #ffffff;
+@white-opacity:rgba(255, 255, 255, 0.3);
 @black: #000000;
 @green: #68b738;
 @green-hover: #5eaa2f;
@@ -7,9 +8,10 @@
 @menu-line: #e6e6e6;
 @line: #d9d9d9;
 @dark-gray: #444444;
-@icon: #666666;
+@dark-gray-opacity:rgba(68, 68, 68, 0.3);
 @vector-active: #b3b3b3;
 @border: #e7e7e7;
+@menu-border: #e6e6e6;
 @outline: #cdcdcd;
 @light-gray: #222222;
 @error: #ff8282;
@@ -18,6 +20,9 @@
 @example: #eaeaea;
 @invite: #111111;
 @academy: #666666;
+@slider-bar: #dcdcdc;
+@dotted-border: #b2b2b2;
+@solid-border: #919191;
 // Разршение экрана
 @tablet: 768px;
 @desktop: 1440px;
@@ -30,10 +35,11 @@
 @dark-shadow: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
 // Главная страница
 @import "blocks/page/page.less";
+@import "blocks/container/container.less";
+@import "blocks/section/section.less";
 @import "blocks/page-header/menu/menu.less";
 @import "blocks/page-header/menu/main-nav/main-nav.less";
 @import "blocks/page-header/menu/main-nav/site-list/site-list.less";
-@import "blocks/page-main/main-content/main-content.less";
 @import "blocks/page-main/main-content/intro/intro.less";
 @import "blocks/interract/interract.less";
 @import "blocks/page-main/main-content/benefits/benefits.less";
@@ -41,28 +47,26 @@
 @import "blocks/page-main/main-content/features/features.less";
 @import "blocks/page-main/main-content/features/features-list/features-list.less";
 @import "blocks/page-main/main-content/features/features-list/list-item/list-item.less";
+@import "blocks/page-main/preview-title/preview-title.less";
+@import "blocks/page-main/model/model.less";
 @import "blocks/page-main/preview/preview.less";
 @import "blocks/page-main/example/example.less";
 @import "blocks/page-main/example/example-result/example-result.less";
 @import "blocks/page-main/example/example-result/box/box.less";
+@import "blocks/page-main/example/slider/slider.less";
 @import "blocks/page-main/example/slider-wrapper/slider-wrapper.less";
 @import "blocks/page-main/example/slider/slider-list/slider-list.less";
 @import "blocks/page-main/example/slider/slider-bar/slider-bar.less";
-@import "blocks/page-main/example/slider/slider.less";
-@import "blocks/page-footer/social-list/social-list.less";
 @import "blocks/page-footer/footer-contacts/footer-contacts.less";
 @import "blocks/page-footer/info/info.less";
 @import "blocks/page-footer/feedback/feedback.less";
 @import "blocks/page-footer/copyright/copyright.less";
+@import "blocks/page-footer/social-list/social-list.less";
 
 // Страница форм
 @import "blocks/program/program.less";
 @import "blocks/program/form/form.less";
 @import "blocks/program/cat-info/cat-info.less";
-@import "blocks/program/cat-name/cat-name.less";
-@import "blocks/program/cat-weight/cat-weight.less";
-@import "blocks/program/cat-old/cat-old.less";
-@import "blocks/program/radio/radio.less";
 @import "blocks/program/user-header/user-header.less";
 @import "blocks/program/user-email/user-email.less";
 @import "blocks/program/user-phone/user-phone.less";
@@ -77,4 +81,3 @@
 @import "blocks/catalog/additional/additional.less";
 @import "blocks/catalog/additional/other/other.less";
 @import "blocks/catalog/aside/aside.less";
-@import "blocks/container/container.less";

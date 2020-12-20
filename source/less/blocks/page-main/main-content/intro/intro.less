@@ -2,18 +2,25 @@
   font-size: 36px;
   line-height: 36px;
   color: @white;
+  position: relative;
+  min-height: 480px;
+  margin-bottom: 22px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   @media (min-width: @tablet) {
-    padding-left: 119px;
+    margin-bottom: 375px;
+    width: 708px;
   }
   @media (min-width: @desktop) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding-left: 190px;
-    margin-bottom: 500px;
+    margin-bottom: 168px;
+    width: 1220px;
   }
 }
-@import "__cat/intro__cat.less";
+@import "__cat/intro-cat.less";
 @import "__text/intro__text.less";
 @import "__title/intro__title.less";
 @import "__food/intro__food.less";
+@import "__link/inro__link.less";

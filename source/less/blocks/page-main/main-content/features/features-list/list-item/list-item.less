@@ -3,9 +3,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+
   @media (min-width: @tablet) {
-    flex-basis: 250px;
     flex-direction: column;
+    &::after {
+      counter-increment: list;
+      content: counter(list) "";
+      position: absolute;
+      font-size: 280px;
+      line-height: 280px;
+      color: @gray;
+      top: -42px;
+      right: 0;
+      @media (min-width: @desktop) {
+        right: 20px;
+      }
+    }
+    &:nth-child(2)::after {
+      top: -39px;
+      right: 0;
+    }
+    &:nth-child(3)::after {
+      top: -40px;
+      right: -20px;
+      @media (min-width: @desktop) {
+        right: 0;
+      }
+    }
+    &:nth-child(4)::after {
+      top: -39px;
+      right: 0;
+    }
+  }
+  @media (min-width: @desktop) {
+    flex-basis: 245px;
   }
 }
 @import "__image/list-item__image.less";

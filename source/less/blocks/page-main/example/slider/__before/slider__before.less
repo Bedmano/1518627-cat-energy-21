@@ -1,0 +1,23 @@
+.slider__before {
+  display: none;
+  @media (min-width: @tablet) {
+    display: block;
+    position: absolute;
+    top: -190px;
+    right: 50%;
+  }
+  @media (min-width: @desktop) {
+    top: -225px;
+    &::after {
+      content: "";
+      background-color: @example;
+      height: 462px;
+      width: 50vw;
+      position: absolute;
+      left: 90.5%;
+      bottom: -115px;
+      background-size: contain;
+      z-index: 2;
+    }
+  }
+}

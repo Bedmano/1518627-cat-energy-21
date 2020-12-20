@@ -3,13 +3,29 @@
   line-height: 18px;
   color: @dark-gray;
   position: relative;
-  @media(min-width: @tablet){
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  &:hover &__form {
+    border-color: @outline;
+  }
+  &:focus &__form {
+    border-color: @dark-gray;
+  }
+  @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
+    flex-basis: 630px;
+    flex-grow: 0;
+    margin-bottom: 65px;
   }
   @media (min-width: @desktop) {
     flex-basis: 568px;
     box-sizing: border-box;
+    margin-left: 50px;
   }
 }
 @import "__form/user-phone__form.less";

@@ -1,0 +1,34 @@
+.slider-list__lever {
+  display: none;
+  @media (min-width: @tablet) {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid @outline;
+    border-radius: 50%;
+    filter: @light-shadow;
+    box-sizing: border-box;
+    background-color: @white;
+    position: absolute;
+    top: -14px;
+    left: 46%;
+    cursor: pointer;
+    &::after {
+      content: "";
+      background-color: @green;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+    &:hover {
+      filter: @shadow;
+    }
+    &:active {
+      filter: @dark-shadow;
+      border-color: @green;
+    }
+  }
+}

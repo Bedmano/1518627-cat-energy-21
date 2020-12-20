@@ -1,8 +1,24 @@
 .copyright {
+  padding-top: 17px;
+  padding-bottom: 20px;
   display: flex;
+  width: 280px;
   justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  &:hover &__logo path {
+    fill: @green;
+  }
+  &:active &__logo path,
+  &:active &__link {
+    fill: @green;
+    opacity: 0.3;
+  }
   @media (min-width: @tablet) {
     justify-content: flex-end;
+    padding-top: 45px;
+    margin: 0;
+    width: auto;
   }
 }
 @import "__link/copyright__link.less";

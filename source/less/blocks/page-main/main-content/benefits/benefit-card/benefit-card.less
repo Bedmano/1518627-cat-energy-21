@@ -7,19 +7,24 @@
   flex-wrap: wrap;
   padding-left: 20px;
   box-sizing: border-box;
+  margin-bottom: 20px;
   @media (min-width: @tablet) {
+    display: grid;
     width: 708px;
     min-height: 372px;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 85px 1fr 85px;
     padding-left: 52px;
-    padding-right: 60px;
-    flex-direction: column;
+    padding-right: 50px;
+    margin-bottom: 30px;
+    padding-top: 52px;
   }
   @media (min-width: @desktop) {
     display: grid;
     width: 570px;
-    gap: 30px;
-    grid-template-rows: 150px min-content 50px;
-    grid-template-columns: 150px 250px 170px;
+    grid-template-rows: 130px min-content 50px;
+    grid-template-columns: 165px 265px 1fr;
+    margin-bottom: 0;
   }
 }
 @import "__title/benefit-card__title.less";

@@ -1,13 +1,16 @@
 .social-list {
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-around;
+  margin: 0;
+  padding: 25px 0 13px 0;
+  justify-content: center;
+  align-items: center;
   border-top: 1px solid @line;
   border-bottom: 1px solid @line;
   @media (min-width: @tablet) {
     border: none;
-
+    padding-top: 36px;
+    padding-left: 35px;
   }
 }
 @import "__item/social-list__item.less";
+@import "social-item/social-item.less";

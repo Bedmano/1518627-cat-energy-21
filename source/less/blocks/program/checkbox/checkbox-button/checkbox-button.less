@@ -1,0 +1,61 @@
+.checkbox-button {
+  font-size: 16px;
+  line-height: 18px;
+  position: relative;
+  padding-bottom: 25px;
+  &:last-of-type {
+    margin-bottom: 13px;
+  }
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    flex-basis: 165px;
+    padding-left: 60px;
+    margin-bottom: 18px;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop) {
+    flex-basis: 190px;
+  }
+
+  & input + &__point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid @outline;
+    top: -5px;
+    left: 0;
+    box-sizing: border-box;
+    filter: @light-shadow;
+    cursor: pointer;
+    @media (min-width: @tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  & input:checked + &__point::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../../../../img/tick.svg);
+    width: 26px;
+    height: 26px;
+    top: 1px;
+    left: 0;
+    @media (min-width: @tablet) {
+      top: 7px;
+      left: 7px;
+    }
+  }
+
+  & input:hover + &__point {
+    border-color: @input-button;
+  }
+  & input:disabled + &__point + &__title,
+  & input:disabled + &__point::after {
+    opacity: 0.3;
+  }
+}
+
+@import "__title/checkbox-button__title.less";

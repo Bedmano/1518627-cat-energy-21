@@ -1,17 +1,31 @@
-.box__item{
+.box__item {
   font-weight: 400;
   width: 124px;
-  height: 64px;
+  height: 59px;
+  border: solid 1px @outline;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
   b {
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
+    font-weight: 400;
   }
   div {
     color: @dark-gray;
     font-family: "Arial", sans-serif;
     font-size: 12px;
     line-height: 12px;
+    position: absolute;
+    bottom: -15px;
+    text-align: center;
+    width: 85px;
+    background-color: @example;
   }
   @media (min-width: @tablet) {
     width: 162px;
@@ -22,6 +36,17 @@
     }
     div {
       font-size: 14px;
+      background-color: @white;
+      width: 114px;
+      bottom: -5px;
+    }
+    &:last-of-type > div {
+      width: 142px;
+    }
+  }
+  @media (min-width: @desktop) {
+    div {
+      background-color: @gray;
     }
   }
 }

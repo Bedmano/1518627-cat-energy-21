@@ -1,0 +1,23 @@
+.cat-name__form {
+  border: 1px solid @border;
+  min-width: 229px;
+  height: 45px;
+  box-sizing: border-box;
+  flex-grow: 2;
+  margin-left: 15px;
+  text-transform: uppercase;
+  color: @dark-gray;
+  padding-left: 13px;
+  &--error {
+    border-color: @error;
+  }
+  @media (min-width: @tablet) {
+    min-width: 567px;
+    height: 52px;
+    margin-left: 17px;
+    padding-left: 19px;
+  }
+  @media (min-width: @desktop) {
+    min-width: 506px;
+  }
+}

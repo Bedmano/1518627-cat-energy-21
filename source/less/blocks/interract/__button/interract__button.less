@@ -1,5 +1,26 @@
 .interract__button {
   background-color: @gray;
   text-decoration: none;
-  color: @white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-align: center;
+  color: @dark-gray;
+  &:hover {
+    background-color: @gray-hover;
+  }
+  &:active {
+    color: @dark-gray-opacity;
+  }
+  &--active {
+    background-color: @green;
+    color: @white;
+    &:hover {
+      background-color: @green-hover;
+    }
+    &:active {
+      color: @white-opacity;
+    }
+  }
 }
