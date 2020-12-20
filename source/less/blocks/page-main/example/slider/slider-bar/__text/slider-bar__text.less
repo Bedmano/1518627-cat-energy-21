@@ -1,9 +1,25 @@
 .slider-bar__text {
   font-size: 16px;
   line-height: 20px;
-
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px dotted @dotted-border;
+    box-sizing: border-box;
+
+    &:hover {
+      border-bottom: 1px solid @solid-border;
+    }
+    &:active {
+      border: none;
+    }
+  }
+  @media (min-width: @desktop) {
+    z-index: 2;
   }
 }

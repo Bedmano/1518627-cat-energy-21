@@ -4,14 +4,40 @@
   font-size: 16px;
   line-height: 16px;
   color: @black;
+  margin-top: 20px;
+  position: relative;
+  &:hover .benefit-card__icon {
+    clip: rect(auto auto auto auto);
+  }
+  &:active,
+  &:active path,
+  &:active line {
+    color: @vector-active;
+    fill: @vector-active;
+    stroke: @vector-active;
+  }
+
+  &:active .benefit-card__icon {
+    fill: @vector-active;
+  }
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
-    align-self: flex-start;
-
+    margin-top: 0;
   }
   @media (min-width: @desktop) {
     grid-row-start: -2;
     grid-row-end: -1;
+    margin-top: 30px;
+  }
+}
+.benefit-card__icon {
+  position: absolute;
+  top: 2px;
+  left: 90px;
+  clip: rect(auto 32px auto 8px);
+  @media (min-width: @tablet) {
+    top: 10px;
+    left: 120px;
   }
 }

@@ -1,5 +1,13 @@
 .box {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin-bottom: 32px;
+  @media (min-width: @tablet) {
+    width: 366px;
+  }
+  @media (min-width: @desktop) {
+    padding-bottom: 18px;
+  }
 }
 @import "__item/box__item.less";

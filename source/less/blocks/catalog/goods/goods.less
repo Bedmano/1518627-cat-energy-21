@@ -1,31 +1,60 @@
 .goods {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  grid-template-rows: repeat(2, 1fr) 40px;
+  grid-template-rows: 60px 1fr 1fr;
+  position: relative;
+  height: 209px;
+  &::before {
+    content: "";
+    width: 200vw;
+    height: 1px;
+    background-color: @gray-hover;
+    background-size: contain;
+    position: absolute;
+    top: -10px;
+    left: -100%;
+  }
+  &::after {
+    content: "";
+    width: 200vw;
+    height: 1px;
+    background-color: @gray-hover;
+    background-size: contain;
+    position: absolute;
+    bottom: 10px;
+    left: -100%;
+  }
+
   @media (min-width: @tablet) {
     width: 324px;
     height: 430px;
     background-color: @gray;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    // margin-left: 60px;
-    // &:nth-child(even){
-    //   margin-left: 0;
-    // }
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 141px;
+    align-items: flex-end;
+    &:nth-last-of-type(2) {
+      margin-bottom: 68px;
+    }
+    &::before,
+    &::after {
+      display: none;
+    }
   }
   @media (min-width: @desktop) {
     width: 245px;
-    // margin-left: 80px;
-    // &:nth-of-type(even) {
-    //   margin-left: 0;
-    // }
-
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7) {
+      margin-bottom: 79px;
+    }
   }
 }
 @import "__title/goods__title.less";
 @import "table/table.less";
 @import "__image/goods__image.less";
 @import "__button/goods__button.less";
+@import "link/link.less";

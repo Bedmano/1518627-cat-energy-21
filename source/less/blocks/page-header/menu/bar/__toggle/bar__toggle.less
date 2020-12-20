@@ -1,0 +1,19 @@
+.bar__toggle {
+  border: none;
+  outline: none;
+  background: transparent;
+  &--hamburger {
+    width: 24px;
+    height: 18px;
+    background-image: url(../../../../../img/hamburger.svg);
+    background-repeat: no-repeat;
+  }
+  &--cross {
+    background-image: url(../../../../../img/cross.svg);
+    height: 24px;
+    width: 24px;
+  }
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}

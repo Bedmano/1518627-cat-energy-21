@@ -2,5 +2,27 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
+  position: relative;
+  background-color: @white;
+  width: 84px;
+  height: 14px;
+  box-sizing: border-box;
+  border: 1px solid @outline;
+  border-radius: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  @media (min-width: @tablet) {
+    width: auto;
+    min-width: 428px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: @slider-bar;
+    border: none;
+    height: 6px;
+  }
+  @media (min-width: @desktop) {
+    z-index: 2;
+  }
 }
+@import "__item/slider-list__item.less";
+@import "__lever/slider-list__lever.less";

@@ -1,18 +1,26 @@
 .info {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
   justify-content: space-between;
+  @media (min-width: @tablet) {
+    padding-left: 41px;
+    padding-right: 41px;
+    height: 201px;
+    box-sizing: border-box;
+  }
   @media (min-width: @desktop) {
     background-color: @white;
     width: 570px;
-    height: 201px;
     z-index: 1;
     justify-content: space-around;
     align-items: center;
     position: absolute;
     top: 95px;
     left: 110px;
+    box-sizing: border-box;
   }
 }
 @import "__text/info__text.less";

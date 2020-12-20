@@ -1,0 +1,29 @@
+.cat-old {
+  font-size: 16px;
+  line-height: 18px;
+  color: @dark-gray;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-self: flex-start;
+  align-items: center;
+  &:hover &__form {
+    border-color: @outline;
+  }
+  &:focus &__form {
+    border-color: @dark-gray;
+  }
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: @desktop) {
+    height: 52px;
+  }
+}
+@import "__form/cat-old__form.less";
+@import "__title/cat-old__title.less";

@@ -3,9 +3,22 @@
   line-height: 18px;
   color: @dark-gray;
   position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  &:hover &__form {
+    border-color: @outline;
+  }
+
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
+    flex-basis: 630px;
+    flex-grow: 0;
+    margin-bottom: 20px;
   }
   @media (min-width: @desktop) {
     flex-basis: 568px;

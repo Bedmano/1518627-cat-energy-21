@@ -1,19 +1,43 @@
 .benefit-card__text {
-  font-family: "Arial" sans-serif;
+  font-family: "Arial", sans-serif;
   color: @dark-gray;
   font-size: 14px;
   line-height: 18px;
   margin: 0;
+  box-sizing: border-box;
+  margin-right: 20px;
+  padding-top: 4px;
+  border-bottom: 1px solid @line;
+
+  .benefit-br--t {
+    display: none;
+  }
+  .benefit-br--d {
+    display: none;
+  }
   @media (min-width: @tablet) {
     font-size: 16px;
     line-height: 24px;
-    width: 377px;
-    align-self: flex-start;
+    margin-right: 0;
+
+    border: none;
+    .benefit-br--t {
+      display: block;
+    }
+    .benefit-br--d {
+      display: none;
+    }
   }
   @media (min-width: @desktop) {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: -1;
+    .benefit-br--t {
+      display: none;
+    }
+    .benefit-br--d {
+      display: block;
+    }
   }
 }

@@ -1,0 +1,27 @@
+.section {
+  position: relative;
+  &__title--sideline::after {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    height: 2px;
+    width: 200%;
+    overflow: hidden;
+    top: 16px;
+    @media (min-width: @tablet) {
+      top: 20px;
+    }
+  }
+  @media(min-width:@tablet){
+    &__title--sideline::before {
+      content: "";
+      position: absolute;
+      background-color: @green;
+      height: 2px;
+      overflow: hidden;
+      top: 20px;
+      right:105%;
+      width:50%
+    }
+  }
+}
