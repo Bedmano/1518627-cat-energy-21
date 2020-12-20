@@ -6,7 +6,7 @@
   margin-top: 0;
   width: 100%;
   position: relative;
-  &.section__title--sideline::after {
+  &::after {
     left: 200px;
   }
   @media (min-width: @tablet) {
@@ -16,18 +16,18 @@
     br {
       display: none;
     }
-    &.section__title--sideline::after {
+    &::after {
       left: 555px;
       top: 22px;
     }
-    &.section__title--sideline::before {
+    &::before {
       right: 107%;
       top: 22px;
     }
   }
   @media (min-width: @desktop) {
     margin-bottom: 76px;
-    &.section__title--sideline::before {
+    &::before {
       right: 104%;
     }
   }

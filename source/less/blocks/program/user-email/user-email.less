@@ -9,6 +9,7 @@
   align-items: center;
   margin-bottom: 14px;
   text-transform: uppercase;
+  width: 100%;
   &:hover &__form {
     border-color: @outline;
   }
@@ -16,13 +17,13 @@
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
-    flex-basis: 630px;
     flex-grow: 0;
     margin-bottom: 20px;
   }
   @media (min-width: @desktop) {
-    flex-basis: 568px;
     box-sizing: border-box;
+    margin-bottom: 65px;
+    width: auto;
   }
 }
 @import "__form/user-email__form.less";
