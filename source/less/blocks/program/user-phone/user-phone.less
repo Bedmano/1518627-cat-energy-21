@@ -9,6 +9,7 @@
   margin-bottom: 25px;
   box-sizing: border-box;
   text-transform: uppercase;
+  width: 100%;
   &:hover &__form {
     border-color: @outline;
   }
@@ -18,14 +19,14 @@
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
-    flex-basis: 630px;
     flex-grow: 0;
     margin-bottom: 65px;
   }
   @media (min-width: @desktop) {
-    flex-basis: 568px;
+    width: auto;
     box-sizing: border-box;
     margin-left: 50px;
+    margin-bottom: 65px;
   }
 }
 @import "__form/user-phone__form.less";

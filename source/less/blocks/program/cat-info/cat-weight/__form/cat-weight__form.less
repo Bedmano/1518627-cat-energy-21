@@ -8,6 +8,11 @@
   text-transform: uppercase;
   color: @dark-gray;
   padding-left: 15px;
+  -moz-appearance: textfield;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
   &--error {
     border-color: @error;
   }
@@ -15,7 +20,7 @@
     width: 497px;
     height: 52px;
     margin-left: 20px;
-    padding-left:19px;
+    padding-left: 19px;
   }
   @media (min-width: @desktop) {
     width: 436px;
