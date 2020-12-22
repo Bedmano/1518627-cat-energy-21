@@ -8,14 +8,16 @@
   color: @dark-gray;
   &:disabled {
     border-color: @dark-gray;
+    border-width: 2px;
   }
-  &:disabled + .user-phone__icon path {
+  &:disabled + .user-phone__icon{
     fill: @green;
   }
   &--error {
     border-color: @error;
+    border-width: 2px;
   }
-  &--error + .user-phone__icon path {
+  &--error + .user-phone__icon {
     fill: @error;
   }
   @media (min-width: @tablet) {

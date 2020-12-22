@@ -6,6 +6,9 @@
   background-size: cover;
   position: absolute;
   left: 0;
+  @media (min-resolution: 2dppx){
+    background-image: url(../../../../../../img/cat-background-mobile@2x.jpg);
+  }
   @media (min-width: @tablet) {
     display: none;
   }
@@ -18,5 +21,8 @@
     top: 0;
     left: auto;
     right: 0;
+    @media (min-resolution: 2dppx){
+      background-image: url(../../../../../../img/cat-background@2x.jpg);
+    }
   }
 }
