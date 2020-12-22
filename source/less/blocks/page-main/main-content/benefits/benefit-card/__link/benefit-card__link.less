@@ -6,19 +6,17 @@
   color: @black;
   margin-top: 20px;
   position: relative;
+  & .benefit-card__icon {
+    stroke: @black;
+  }
   &:hover .benefit-card__icon {
     clip: rect(auto auto auto auto);
   }
   &:active,
-  &:active path,
-  &:active line {
+  &:active .benefit-card__icon {
     color: @vector-active;
     fill: @vector-active;
     stroke: @vector-active;
-  }
-
-  &:active .benefit-card__icon {
-    fill: @vector-active;
   }
   @media (min-width: @tablet) {
     font-size: 20px;

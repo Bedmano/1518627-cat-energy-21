@@ -8,15 +8,17 @@
   color: @dark-gray;
   &:disabled {
     border-color: @dark-gray;
+    border-width: 2px;
   }
-  &:disabled + .user-email__icon path {
-    fill: @green;
+  &:disabled + .user-email__icon {
+    stroke: @green;
   }
   &--error {
     border-color: @error;
+    border-width: 2px;
   }
-  &--error + .user-email__icon path {
-    fill: @error;
+  &--error + .user-email__icon {
+    stroke: @error;
   }
   @media (min-width: @tablet) {
     min-width: 551px;
