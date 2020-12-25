@@ -1,6 +1,10 @@
 .main-nav {
-  display: none;
   width: 100%;
+  display: none;
+  &--nojs {
+    display: block;
+  }
+
   @media (min-width: @tablet) {
     display: block;
     flex-basis: 66%;

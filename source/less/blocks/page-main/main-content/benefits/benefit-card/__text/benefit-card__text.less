@@ -5,39 +5,31 @@
   line-height: 18px;
   margin: 0;
   box-sizing: border-box;
-  margin-right: 20px;
-  padding-top: 4px;
+  padding-right: 20px;
+  padding-top: 5px;
   border-bottom: 1px solid @line;
 
-  .benefit-br--t {
-    display: none;
-  }
-  .benefit-br--d {
-    display: none;
-  }
   @media (min-width: @tablet) {
     font-size: 16px;
     line-height: 24px;
     margin-right: 0;
-
     border: none;
-    .benefit-br--t {
-      display: block;
+    &--slim {
+      padding-right:0;
+      width: 377px;
     }
-    .benefit-br--d {
-      display: none;
+
+    &--pro {
+      width: 340px;
+      padding-right:0;
     }
   }
+
   @media (min-width: @desktop) {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: -1;
-    .benefit-br--t {
-      display: none;
-    }
-    .benefit-br--d {
-      display: block;
-    }
+    width:467px;
   }
 }
