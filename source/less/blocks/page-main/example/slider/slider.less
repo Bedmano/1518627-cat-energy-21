@@ -1,6 +1,8 @@
 .slider {
-  & > &--current {
-    display: block;
+  @media(max-width:@mobile ){
+    & > &--current {
+      display: block;
+    }
   }
   @media (min-width: @tablet) {
     height: 462px;

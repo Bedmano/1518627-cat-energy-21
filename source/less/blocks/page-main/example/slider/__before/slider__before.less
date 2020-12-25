@@ -1,20 +1,26 @@
 .slider__before {
+  margin: 0 auto;
   display: none;
+  width: 320px;
   @media (min-width: @tablet) {
     display: block;
     position: absolute;
     top: -190px;
     right: 50%;
+    margin: auto;
+    padding: 0;
+    padding-right:35px;
   }
   @media (min-width: @desktop) {
     top: -225px;
+    padding-right:85px;
     &::after {
       content: "";
       background-color: @example;
       height: 462px;
       width: 50vw;
       position: absolute;
-      left: 90.5%;
+      left: 91%;
       bottom: -115px;
       background-size: contain;
       z-index: 2;

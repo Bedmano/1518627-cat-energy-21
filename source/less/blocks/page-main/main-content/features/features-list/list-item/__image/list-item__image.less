@@ -1,15 +1,36 @@
 .list-item__image {
   background-color: @green;
   min-width: 60px;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .leaf {
+    width: 30px;
+    height: 32px;
+  }
+
+  .tub {
+    width: 29px;
+    height: 31px;
+  }
+
+  .eat {
+    width: 25px;
+    height: 30px;
+  }
+
+  .clock {
+    width: 32px;
+    height: 32px;
+  }
   @media (min-width: @tablet) {
     align-self: flex-start;
-    height: 80px;
-    width: 80px;
-    margin-bottom: 32px;
+    min-height: 80px;
+    min-width: 80px;
+    margin-bottom:32px;
+    box-sizing: border-box;
   }
   @media (min-width: @desktop) {
     margin-bottom: 31px;
