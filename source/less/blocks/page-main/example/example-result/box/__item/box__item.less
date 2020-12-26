@@ -10,12 +10,14 @@
   align-items: center;
   position: relative;
   box-sizing: border-box;
+
   b {
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
     font-weight: 400;
   }
+
   div {
     color: @dark-gray;
     font-family: "Arial", sans-serif;
@@ -27,23 +29,28 @@
     width: 85px;
     background-color: @example;
   }
+
   @media (min-width: @tablet) {
     width: 162px;
     height: 72px;
+
     b {
       font-size: 30px;
       line-height: 37px;
     }
+
     div {
       font-size: 14px;
       background-color: @white;
       width: 114px;
       bottom: -5px;
     }
+
     &:last-of-type > div {
       width: 142px;
     }
   }
+
   @media (min-width: @desktop) {
     div {
       background-color: @gray;

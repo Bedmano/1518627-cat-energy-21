@@ -8,9 +8,11 @@
   padding-top: 0;
   height: 129px;
   box-sizing: border-box;
+
   &:last-of-type {
     margin-bottom: 40px;
   }
+
   @media (min-width: @tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -22,10 +24,12 @@
     padding-bottom: 18px;
     height: 140px;
     border: 1px solid @outline;
+
     &:last-of-type {
       margin-bottom: 65px;
     }
   }
+
   @media (min-width: @desktop) {
     flex-wrap: nowrap;
     border-left: none;
@@ -36,6 +40,7 @@
     padding-right: 0;
   }
 }
+
 @import "__title/other__title.less";
 @import "__item/other__item.less";
 @import "__button/other__button.less";

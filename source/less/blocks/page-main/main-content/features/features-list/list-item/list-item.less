@@ -8,6 +8,7 @@
 
   @media (min-width: @tablet) {
     flex-direction: column;
+
     &::after {
       counter-increment: list;
       content: counter(list) "";
@@ -17,29 +18,36 @@
       color: @gray;
       top: -42px;
       right: 0;
+
       @media (min-width: @desktop) {
         right: 20px;
       }
     }
+
     &:nth-child(2)::after {
       top: -39px;
       right: 0;
     }
+
     &:nth-child(3)::after {
       top: -40px;
       right: -20px;
+
       @media (min-width: @desktop) {
         right: 0;
       }
     }
+
     &:nth-child(4)::after {
       top: -39px;
       right: 0;
     }
   }
+
   @media (min-width: @desktop) {
     flex-basis: 245px;
   }
 }
+
 @import "__image/list-item__image.less";
 @import "__text/list-item__text.less";

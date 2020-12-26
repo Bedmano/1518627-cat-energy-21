@@ -4,17 +4,20 @@
   min-width: 280px;
   margin-bottom: 15px;
   flex-basis: 100%;
+
   @media (min-width: @tablet) {
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 570px;
     margin-bottom: 67px;
   }
+
   @media (min-width: @desktop) {
     flex-basis: 100%;
     margin-bottom: 73px;
   }
 }
+
 @import "__title/checkbox__title.less";
 @import "checkbox-button/checkbox-button.less";
 @import "__required/checkbox__required.less";

@@ -6,6 +6,7 @@
   @media (min-width: @tablet) {
     padding-bottom: 22px;
   }
+
   &:last-of-type {
     padding-bottom: 0;
   }
@@ -21,6 +22,7 @@
     border-radius: 50%;
     filter: @light-shadow;
     cursor: pointer;
+
     @media (min-width: @tablet) {
       width: 40px;
       height: 40px;
@@ -28,6 +30,7 @@
       left: 0;
     }
   }
+
   & input:checked + &__point::after {
     content: "";
     position: absolute;
@@ -37,6 +40,7 @@
     border-radius: 50%;
     top: 7px;
     left: 7px;
+
     @media (min-width: @tablet) {
       width: 18px;
       height: 18px;
@@ -44,13 +48,16 @@
       left: 10px;
     }
   }
+
   & input:hover + &__point {
     filter: @shadow;
   }
+
   & input:active + &__point {
     border-color: @green;
     filter: @dark-shadow;
   }
+
   & input:disabled + &__point + &__title,
   & input:disabled + &__point::after {
     opacity: 0.3;

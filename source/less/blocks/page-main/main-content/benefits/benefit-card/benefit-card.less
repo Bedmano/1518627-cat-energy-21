@@ -8,6 +8,7 @@
   padding-left: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
+
   @media (min-width: @tablet) {
     display: grid;
     width: 708px;
@@ -19,14 +20,16 @@
     margin-bottom: 30px;
     padding-top: 52px;
   }
+
   @media (min-width: @desktop) {
     display: grid;
     width: 570px;
-    grid-template-rows: 130px min-content 50px;
+    grid-template-rows: 130px 1fr 90px;
     grid-template-columns: 165px 265px 1fr;
     margin-bottom: 0;
   }
 }
+
 @import "__title/benefit-card__title.less";
 @import "__text/benefit-card__text.less";
 @import "__link/benefit-card__link.less";

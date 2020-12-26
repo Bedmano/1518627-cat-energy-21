@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Подбор программы</title>
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -37,7 +37,7 @@
     </symbol>
 
     <symbol viewBox="0 0 128 24" fill="none" id="logo">
-      <g clip-path="url(#clip0)">
+      <g clip-path="url(#clip1)">
         <path
           d="M1.60253 22.0513C0.468358 20.3682 -0.0946573 18.3503 3.016e-05 16.3077V7.79487C-0.137317 5.73031 0.390444 3.67661 1.50238 1.94872C2.6041 0.615385 4.30676 0 6.81067 0C9.31458 0 10.9171 0.615385 11.9187 1.74359C13.006 3.17255 13.5409 4.96181 13.421 6.76923V8.82051H8.51333V6.46154C8.55297 5.76385 8.45065 5.06533 8.21286 4.41026C8.08576 4.14583 7.88431 3.9264 7.63443 3.78018C7.38455 3.63395 7.09766 3.56763 6.81067 3.58974C6.10958 3.58974 5.60879 3.79487 5.40848 4.30769C5.18191 5.03643 5.08025 5.79984 5.10801 6.5641V17.5385C5.05512 18.2799 5.19327 19.0227 5.50864 19.6923C5.70895 20.2051 6.20973 20.4103 6.91083 20.4103C7.61192 20.4103 8.01255 20.2051 8.21286 19.6923C8.44058 18.9992 8.54242 18.2692 8.51333 17.5385V15.0769H13.421V17.1282C13.5229 18.9651 12.9911 20.7803 11.9187 22.2564C10.9171 23.4872 9.21443 24.1026 6.81067 24.1026C4.40692 24 2.6041 23.3846 1.60253 22.0513Z"
           fill="#111111" />
@@ -65,7 +65,7 @@
           fill="#111111" />
       </g>
       <defs>
-        <clipPath id="clip0">
+        <clipPath id="clip1">
           <rect width="128" height="24" fill="white" />
         </clipPath>
       </defs>
@@ -102,7 +102,7 @@
           <button type="button" class="bar__toggle bar__toggle--hamburger"><span class="visually-hidden">Открыть
               меню</span></button>
         </div>
-        <nav class="menu__nav main-nav">
+        <nav class="menu__nav main-nav main-nav--nojs">
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -236,22 +236,9 @@
           </address>
         </div>
         <iframe class="footer-contacts__item map" loading="lazy"
+          aria-label="месторасположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5274.3943452615795!2d30.31883647199927!3d59.938416986466656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607185937459!5m2!1sru!2sru"
-          width="320" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-          tabindex="0">
-          <picture>
-            <source type="image/webp" media="(max-width: 320px)"
-              srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 768px)"
-              srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map.webp, img/map@2x.webp 2x">
-
-            <source media="(max-width: 320px)" srcset="img/map-mobile.jpg, img/map-mobile@2x.jpg 2x">
-            <source media="(max-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
-            <source media="(min-width: 1440px)" srcset="img/map.jpg, img/map@2x.jpg 2x">
-            <img src="img/map.jpg" srcset="img/map@2x.jpg 2x"
-              alt="месторасположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          </picture>
+          width="320" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
       </section>
       <section class="feedback">

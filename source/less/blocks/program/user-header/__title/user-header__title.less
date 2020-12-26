@@ -6,30 +6,38 @@
   margin-top: 0;
   width: 100%;
   position: relative;
+
   & .space {
     display: none;
   }
+
   &::after {
     left: 200px;
   }
+
   @media (min-width: @tablet) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 75px;
+
     br {
       display: none;
     }
+
     &::after {
       left: 555px;
       top: 22px;
     }
+
     &::before {
       right: 107%;
       top: 22px;
     }
   }
+
   @media (min-width: @desktop) {
     margin-bottom: 76px;
+
     &::before {
       right: 104%;
     }

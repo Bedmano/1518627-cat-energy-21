@@ -5,23 +5,27 @@
   line-height: 18px;
   margin: 0;
   box-sizing: border-box;
-  padding-right: 20px;
-  padding-top: 5px;
+  margin-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  min-height: 136px;
   border-bottom: 1px solid @line;
 
   @media (min-width: @tablet) {
     font-size: 16px;
     line-height: 24px;
     margin-right: 0;
+    padding-top: 5px;
     border: none;
+
     &--slim {
-      padding-right:0;
+      padding-right: 0;
       width: 377px;
     }
 
     &--pro {
       width: 340px;
-      padding-right:0;
+      padding-right: 0;
     }
   }
 
@@ -30,6 +34,8 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: -1;
-    width:467px;
+    width: 467px;
+    padding-bottom: 25px;
+    min-height: auto;
   }
 }
