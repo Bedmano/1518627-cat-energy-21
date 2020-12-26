@@ -11,7 +11,7 @@ const sliderItemBefore = document.querySelector(".slider-list__item--before");
 window.onload = () => {
   nav.classList.remove("main-nav--nojs");
 };
-if (screen.width < 767) {
+if (screen.width <= 767) {
   menu.addEventListener("click", () => {
     menu.classList.toggle("bar__toggle--hamburger");
     menu.classList.toggle("bar__toggle--cross");
