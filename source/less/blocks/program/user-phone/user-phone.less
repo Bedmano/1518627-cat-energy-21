@@ -10,18 +10,22 @@
   box-sizing: border-box;
   text-transform: uppercase;
   width: 100%;
+
   &:hover &__form {
     border-color: @outline;
   }
+
   &:focus &__form {
     border-color: @dark-gray;
   }
+
   @media (min-width: @tablet) {
     font-size: 20px;
     line-height: 30px;
     flex-grow: 0;
     margin-bottom: 65px;
   }
+
   @media (min-width: @desktop) {
     width: auto;
     box-sizing: border-box;
@@ -29,5 +33,6 @@
     margin-bottom: 65px;
   }
 }
+
 @import "__form/user-phone__form.less";
 @import "__icon/user-phone__icon.less";

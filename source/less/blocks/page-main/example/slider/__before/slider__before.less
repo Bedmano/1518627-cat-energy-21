@@ -2,6 +2,7 @@
   margin: 0 auto;
   display: none;
   width: 320px;
+
   @media (min-width: @tablet) {
     display: block;
     position: absolute;
@@ -9,11 +10,13 @@
     right: 50%;
     margin: auto;
     padding: 0;
-    padding-right:35px;
+    padding-right: 35px;
   }
+
   @media (min-width: @desktop) {
     top: -225px;
-    padding-right:85px;
+    padding-right: 85px;
+
     &::after {
       content: "";
       background-color: @example;

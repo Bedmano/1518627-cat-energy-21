@@ -5,9 +5,11 @@
   text-align: left;
   margin-top: 0;
   margin-bottom: 35px;
+
   &::after {
     left: 250px;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -18,25 +20,31 @@
     right: 107%;
     top: 16px;
   }
+
   @media (min-width: @tablet) {
     font-size: 36px;
     line-height: 36px;
     padding-left: 39px;
     margin-bottom: 80px;
+
     &::after {
       left: 411px;
       top: 22px;
     }
+
     &::before {
       right: 100%;
       top: 22px;
     }
   }
+
   @media (min-width: @desktop) {
     padding-left: 0;
+
     &::after {
       left: 374px;
     }
+
     &::before {
       right: 105%;
     }

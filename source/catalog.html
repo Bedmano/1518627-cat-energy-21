@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи - Каталог продукции</title>
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -84,7 +84,7 @@
           <button type="button" class="bar__toggle bar__toggle--hamburger"><span class="visually-hidden">Открыть
               меню</span></button>
         </div>
-        <nav class="menu__nav main-nav">
+        <nav class="menu__nav main-nav main-nav--nojs">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html" aria-label="Перейти на главную страницу">Главная</a>
@@ -104,6 +104,7 @@
     <h1 class="page-main__title container">Каталог продукции</h1>
     <section class="catalog container">
       <!-- 1-й товар -->
+      <h2 class="visually-hidden">Товары</h2>
       <section class="catalog__item goods interract">
         <a href="#" class="goods__image" aria-label="Перейти на страницу питания Cat energy pro 500 г с курицей">
           <picture>
@@ -123,7 +124,7 @@
         </a>
         <table class="goods__table table">
           <tr class="table__item table-item">
-            <th class="table-item__title">Масса</th>
+            <th class="table-item__title">Масса </th>
             <td class="table-item__description">500 г</td>
           </tr>
           <tr class="table__item table-item">
@@ -345,10 +346,10 @@
       </section>
       <!-- Показать больше -->
       <section class="catalog__item show-more interract">
-        <svg class="show-more__plus" aria-label="Иконка плюса">
+        <svg class="show-more__plus" width="60" height="60" aria-label="Иконка плюса">
           <use xlink:href="#plus"></use>
         </svg>
-        <h2 class="show-more__title">Показать ещё<span class="space">&nbsp;</span><br class="show-more--br"> 100500
+        <h2 class="show-more__title">Показать ещё <span class="space">&nbsp;</span><br class="show-more--br"> 100500
           товаров</h2>
         <p class="show-more__text">На самом деле вкусов<span class="space">&nbsp;</span><br class="show-more--br">
           гораздо больше!
@@ -427,21 +428,9 @@
           </address>
         </div>
         <iframe class="footer-contacts__item map" loading="lazy"
+          aria-label="месторасположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5274.3943452615795!2d30.31883647199927!3d59.938416986466656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607185937459!5m2!1sru!2sru"
           width="320" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-          <picture>
-            <source type="image/webp" media="(max-width: 320px)"
-              srcset="img/map-mobile.webp, img/map-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 768px)"
-              srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map.webp, img/map@2x.webp 2x">
-
-            <source media="(max-width: 320px)" srcset="img/map-mobile.jpg, img/map-mobile@2x.jpg 2x">
-            <source media="(max-width: 768px)" srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
-            <source media="(min-width: 1440px)" srcset="img/map.jpg, img/map@2x.jpg 2x">
-            <img src="img/map.jpg" srcset="img/map@2x.jpg 2x"
-              alt="месторасположение офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          </picture>
         </iframe>
       </section>
       <section class="feedback">

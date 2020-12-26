@@ -8,11 +8,13 @@
   text-transform: uppercase;
   color: @dark-gray;
   padding-left: 15px;
-  -moz-appearance: textfield;
+  appearance: textfield;
+
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+    appearance: none;
   }
+
   &--error {
     border-color: @error;
   }

@@ -1,5 +1,6 @@
 .slider-list__lever {
   display: none;
+
   @media (min-width: @tablet) {
     display: block;
     width: 34px;
@@ -13,6 +14,7 @@
     top: -14px;
     left: 46%;
     cursor: pointer;
+
     &::after {
       content: "";
       background-color: @green;
@@ -23,9 +25,11 @@
       top: 12px;
       left: 12px;
     }
+
     &:hover {
       filter: @shadow;
     }
+
     &:active {
       filter: @dark-shadow;
       border-color: @green;
