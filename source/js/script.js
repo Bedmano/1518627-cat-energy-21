@@ -10,6 +10,7 @@ const sliderItemBefore = document.querySelector(".slider-list__item--before");
 
 window.onload = () => {
   nav.classList.remove("main-nav--nojs");
+  menu.classList.add("bar__toggle--show");
 };
 if (screen.width <= 767) {
   menu.addEventListener("click", () => {

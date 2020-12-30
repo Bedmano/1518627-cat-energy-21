@@ -53,7 +53,8 @@
     filter: @shadow;
   }
 
-  & input:active + &__point {
+  & input:active + &__point,
+  & input:focus + &__point {
     border-color: @green;
     filter: @dark-shadow;
   }

@@ -1,7 +1,32 @@
 .aside__image {
   align-self: flex-end;
+  width: 280px;
+  height: 289px;
+  background-color: @green;
+  background-image: url("../img/cat-bag.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-bag@2x.jpg");
+  }
 
   @media (min-width: @tablet) {
-    min-width: 668px;
+    width: 708px;
+    height: 200px;
+    background-image: url("../img/cat-bag-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-bag-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop) {
+    width: 245px;
+    height: 289px;
+    background-image: url("../img/cat-bag-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-bag-desktop@2x.jpg");
+    }
   }
 }

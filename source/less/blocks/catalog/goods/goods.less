@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: 60px 1fr 1fr;
   position: relative;
-  height: 209px;
+  min-height: 209px;
 
   &::before {
     content: "";
@@ -29,7 +29,7 @@
 
   @media (min-width: @tablet) {
     width: 324px;
-    height: 430px;
+    min-height: 430px;
     background-color: @gray;
     box-sizing: border-box;
     display: flex;

@@ -8,12 +8,26 @@
   margin-bottom: 22px;
   position: relative;
 
+  span {
+    width: 32px;
+    overflow: hidden;
+    position: absolute;
+    top: -2px;
+    left: 100px;
+
+    @media (min-width: @tablet) {
+      top: -2px;
+      left: 135px;
+    }
+  }
+
   & .benefit-card__icon {
     stroke: @black;
   }
 
   &:hover .benefit-card__icon {
-    clip: rect(auto auto auto auto);
+    transform: translateX(0);
+    transition: 0.2s;
   }
 
   &:active,
@@ -38,13 +52,6 @@
 }
 
 .benefit-card__icon {
-  position: absolute;
-  top: 2px;
-  left: 90px;
-  clip: rect(auto 32px auto 8px);
-
-  @media (min-width: @tablet) {
-    top: 10px;
-    left: 125px;
-  }
+  transform: translateX(-8px);
+  transition: 0.2s;
 }
